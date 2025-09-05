@@ -1,0 +1,293 @@
+/* Basic Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c;
+    transform: scale(1.1);
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    margin-top: 60px;
+}
+
+#about {
+    background: linear-gradient(135deg, #604182, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#about h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: bounceIn 1s;
+}
+
+#about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 2s;
+}
+
+/* Animation */
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Education Section */
+#education {
+    background: linear-gradient(135deg, #e67ad2, #ff7e00);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#education .education-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    border-left: 4px solid #1abc9c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#education .education-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#education h3 {
+    margin-top: 0;
+    color: #1abc9c;
+}
+/* Experience Section */
+#Experience .Experience {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-left: 4px solid #1abc9c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#Experience .Experience:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#Experience h3 {
+    margin-top: 0;
+    color: #1abc9c;
+}
+
+/* Skills Section */
+#skills {
+    background: linear-gradient(135deg, #1abc9c, #2ecc71);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#skills ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Project Section */
+#Project {
+    background: linear-gradient(135deg, #eb7b9b, #740620);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#Project h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #fff;
+}
+
+#Project ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Project ul li {
+    font-size: 18px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#Project ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Activities Section */
+#activities {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#activities h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #fff;
+}
+
+#activities p {
+    font-size: 18px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#activities p:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #16a085;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Image Styles */
+img.profile-pic {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 150px;
+    animation: profilePicAnimation 2s infinite alternate;
+}
+
+@keyframes profilePicAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Scroll Animations */
+header nav ul li {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
